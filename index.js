@@ -98,8 +98,8 @@ bot.on('message', function (message) {
 		}
 
 		if (message.content === "raid !")
-			message.channel.send(" heum , <@693832416925581332> , <@679702193875451914> , <@668452729265455111> qlq à prononcer le mot 'raid' allez voir dans les <#709386811708801065> pour savoir qui c'est , par précaution j'ai supprimé le message !")
-		message.delete(message.author);
+			message.channel.send(" heum , <@693832416925581332> , <@679702193875451914> , <@668452729265455111> qlq à prononcer le mot 'raid' !")
+		
 })
 
 bot.login(process.env.TOKEN)

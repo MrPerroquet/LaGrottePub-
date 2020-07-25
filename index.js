@@ -10,7 +10,7 @@ bot.on('ready', function () {
 bot.on('message', function (message) {
 	if (message.content === 'g!help') {
 		let HelpEmbed = new Discord.MessageEmbed()
-		.setDescription("Voici les commandes : **__g!help\ng!langage\ng!status\ng!arouf\ng!love\ng!bump\ng!help2\ng!publispace\ng!graphiste\ng!venice__**")
+		.setDescription("Voici les commandes : **__g!help\ng!langage\ng!status\ng!arouf\ng!love\n\ng!help2\ng!publispace\ng!graphiste\ng!venice__**")
 		.setColor("#FFFF00")
 		.setTitle("Help")
 		.setFooter("👍 Footer !")
@@ -57,10 +57,6 @@ bot.on('message', function (message) {
 		message.channel.send(' Voici le salon de notre pub <#709450267451588638> et voici celui pour les gens avec un nitro <#727143653356732416>')
 	}
 
-	if (message.content === 'g!bump') {
-		message.channel.send('Vous avez bump avec succés ! ')
-	}
-
 	if(message.content === 'g!help2') {
 		message.channel.send('Le bot n‘est que visuel (pour l‘instant)')
 	}
@@ -100,6 +96,10 @@ bot.on('message', function (message) {
 			message.channel.send("thx !")
 			message.react('♥️')
 		}
+
+		if (message.content === "raid !")
+			message.channel.send(" heum , <@693832416925581332> , <@679702193875451914> , <@668452729265455111> qlq à prononcer le mot 'raid' allez voir dans les <#709386811708801065> pour savoir qui c'est , par précaution j'ai supprimé le message !")
+		message.delete(message.author)
 })
 
 bot.login(process.env.TOKEN)

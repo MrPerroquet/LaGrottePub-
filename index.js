@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const webhooktuto = new Discord.WebhookClient('729704166905217034', 'B06xX-ojA_u7_MRkQIsejTWUFYnUem6pLCJW2R93czVSKzrHTa9EABOzMtjcJrjswhFD')
 
 //instance
 bot.on('ready', function () {
@@ -22,7 +21,6 @@ bot.on('message', function (message) {
 
 	if (message.content === 'Salut') {
 		message.channel.send('Hey')
-		webhooktuto.send('Coucou')
 		
 		}
 

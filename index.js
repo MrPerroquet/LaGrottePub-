@@ -89,6 +89,10 @@ bot.on('message', function (message) {
 		message.channel.send("Pourquoi mentione-tu le maître du monde ?! 😤")
 		message.react('😤')
 	}
+	
+	if(message.content === 'halllloween') {
+		message.channel.send('🎃🎃Viens voir ce serveur 🎃🎃 : \n https://discord.gg/AXZRYTx ')
+	}
 
 		if (message.content === "?j4j") {
 			message.channel.send("thx !")

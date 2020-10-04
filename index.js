@@ -90,8 +90,8 @@ bot.on('message', function (message) {
 		message.react('😤')
 	}
 	
-	if(message.content === 'halllloween') {
-		message.channel.send('🎃🎃Viens voir ce serveur 🎃🎃 : \n https://discord.gg/AXZRYTx ')
+	if(message.content === 'Halloween') {
+		message.channel.send('🎃🎃Halloween🎃🎃')
 	}
 
 		if (message.content === "?j4j") {

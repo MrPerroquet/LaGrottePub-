@@ -9,7 +9,7 @@ bot.on('ready', function () {
 bot.on('message', function (message) {
 	if (message.content === 'g!help') {
 		let HelpEmbed = new Discord.MessageEmbed()
-		.setDescription("Voici les commandes : **__g!help\ng!langage\ng!status\ng!arouf\ng!love\n\ng!help2\ng!publispace\ng!graphiste\ng!venice__**")
+		.setDescription("Voici les commandes : **__g!help\ng!langage\ng!status\ng!arouf\ng!love\ng!help2\ng!membres\n\ng!publispace\ng!graphiste\ng!venice__**")
 		.setColor("#FFFF00")
 		.setTitle("Help")
 		.setFooter("👍 Footer !")
@@ -18,6 +18,12 @@ bot.on('message', function (message) {
 		message.channel.send(HelpEmbed)
 		console.log("g!help")
 	}
+	
+	if (message.content === 'g!membres') {
+    	let server_name = message.guild.name
+    	let server_size = message.guild.memberCount
+    	message.channel.send('Nombre de membres : ' + server_size)
+    }
 
 	if (message.content === 'Salut') {
 		message.channel.send('Hey')

@@ -3,7 +3,7 @@ const bot = new Discord.Client()
 
 //instance
 bot.on('ready', function () {
-	bot.user.setActivity('g!help', { type: 'PLAYING' })
+	bot.user.setActivity('g!help', { type: 'STREAMING' })
 })
 
 bot.on('message', function (message) {

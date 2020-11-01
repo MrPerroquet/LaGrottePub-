@@ -27,6 +27,7 @@ bot.on('message', function (message) {
 
 	if (message.content === 'Salut') {
 		message.channel.send('Hey')
+		message.react('👋')
 		
 		}
 

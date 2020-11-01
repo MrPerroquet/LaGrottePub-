@@ -9,7 +9,7 @@ bot.on('ready', function () {
 bot.on('message', function (message) {
 	if (message.content === 'f!help') {
 		let HelpEmbed = new Discord.MessageEmbed()
-		.setDescription("Voici les commandes : **__f!help\nf!langage\nf!status\nf!arouf\nf!love\nf!help2\nf!membres\n\nf!publispace\nf!graphiste\nf!venice__**")
+		.setDescription("Voici les commandes : **__f!help\nf!langage\nf!status\nf!arouf\nf!membres\n\nf!publispace\nf!graphiste\nf!venice__**")
 		.setColor("#FFFF00")
 		.setTitle("Help")
 		.setFooter("👍 Footer !")
@@ -30,18 +30,13 @@ bot.on('message', function (message) {
 		
 		}
 
-	if (message.content === 'pute') {
-		message.channel.send('Ok tu es banni <:Ban:718455295298240514>')
-		console.log("pute")
-	}
-
 	if(message.content === 'f!langage') {
 		message.channel.send('Le bot est codé en JavaScript !')
 
 	}
 
 	if(message.content === 'f!status') {
-		message.channel.send('Le bot est En ligne <discord_online:772405238338158594>')
+		message.channel.send('Le bot est En ligne <:discord_online:772405238338158594>')
 	}
 
 	if(message.content === 'pk ?') {
@@ -52,16 +47,7 @@ bot.on('message', function (message) {
 		message.channel.send('Arouf le plus bo https://giphy.com/gifs/YrU1S85ymcQo4CmPyg')
 	}
 
-	if(message.content === 'f!love') {
-		message.channel.send('Voici le serveur que le fondateur aime le PLUS :heartpulse: :heartpulse: https://discord.gg/XFf3cKx')
-		message.react('♥️')
-	}
-
-	if(message.content === 'f!notre-pub') {
-		message.channel.send(' Voici le salon de notre pub <#709450267451588638> et voici celui pour les gens avec un nitro <#727143653356732416>')
-	}
-
-	if (message.content === ' pub help') {
+	if (message.content === 'Forge pub help') {
 		message.channel.send('Tu as besoin d‘aide ? fait g!help')
 	}
 

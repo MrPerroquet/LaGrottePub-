@@ -41,7 +41,7 @@ bot.on('message', function (message) {
 	}
 
 	if(message.content === 'f!status') {
-		message.channel.send('Le bot est En ligne :discord_online:')
+		message.channel.send('Le bot est En ligne <discord_online:772405238338158594>')
 	}
 
 	if(message.content === 'pk ?') {

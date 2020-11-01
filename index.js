@@ -61,7 +61,7 @@ bot.on('message', function (message) {
 		message.channel.send(' Voici le salon de notre pub <#709450267451588638> et voici celui pour les gens avec un nitro <#727143653356732416>')
 	}
 
-	if (message.content === 'La grotte pub help') {
+	if (message.content === ' pub help') {
 		message.channel.send('Tu as besoin d‘aide ? fait g!help')
 	}
 
@@ -90,10 +90,6 @@ bot.on('message', function (message) {
 		if (message.content == "<@!693832416925581332>") {
 		message.channel.send("Pourquoi mentione-tu le maître du monde ?! 😤")
 		message.react('😤')
-	}
-	
-	if(message.content === 'Halloween') {
-		message.channel.send('🎃🎃Halloween🎃🎃')
 	}
 
 		if (message.content === "?j4j") {

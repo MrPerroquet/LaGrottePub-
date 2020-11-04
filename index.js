@@ -85,6 +85,7 @@ bot.on('message', function (message) {
 		}
 	
 	bot.on("messageReactionAdd", (reaction, user) => {
+    if (message.content === "f!ticket)
     if (user.bot) return
     if (reaction.emoji.name == "✅") {
         reaction.message.channel.send('Tu as réagi : ✅');

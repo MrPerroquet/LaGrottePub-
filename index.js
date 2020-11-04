@@ -91,7 +91,7 @@ bot.on('message', function (message) {
         reaction.message.channel.send('Tu as réagi : ✅');
         reaction.message.guild.channels.create(`ticket de ${user.username}`, {
             type: 'text',
-            parent: "ID_DE_LA_CATEGORY",
+            parent: "773560689951768628",
             permissionOverwrites: [{
                 id: reaction.message.guild.id,
                 deny: ['SEND_MESSAGES'],

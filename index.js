@@ -83,7 +83,8 @@ bot.on('message', function (message) {
 			message.channel.send("thx !")
 			message.react('♥️')
 		}
-	 if (message.content === "f!clear") {
+	
+	if (message.content === "f!clear") {
         if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas les permissions");
         if (!args[0]) return message.channel.send("Vous devez mettre un nombre de messages à supprimer");
         if (isNan(args[0])) return message.channel.send("Le nombre de message est invalide");

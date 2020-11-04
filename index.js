@@ -3,6 +3,7 @@ const bot = new Discord.Client()
 
 //instance
 bot.on('ready', function () {
+	bot.user.setStatus("dnd")
 	bot.user.setActivity('f!help', { type: 'LISTENING' })
 })
 

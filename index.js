@@ -3,7 +3,7 @@ const bot = new Discord.Client()
 
 //instance
 bot.on('ready', function () {
-	bot.user.setActivity('f!help', { type: 'LISTENING'})
+	bot.user.setActivity('f!help', { type: 'WATCHING'})
 })
 
 bot.on('message', function (message) {

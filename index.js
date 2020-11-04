@@ -3,8 +3,7 @@ const bot = new Discord.Client()
 
 //instance
 bot.on('ready', function () {
-	bot.user.setStatus("dnd")
-	bot.user.setActivity('f!help', { type: 'LISTENING' })
+	bot.user.setActivity('f!help', { type: 'LISTENING' , url: 'usic.youtube.com/channel/UCbAQ5ZzJ46URxIWeuys8CPw' })
 })
 
 bot.on('message', function (message) {

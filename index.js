@@ -3,7 +3,7 @@ const bot = new Discord.Client()
 
 //instance
 bot.on('ready', function () {
-	bot.user.setActivity('f!help', { type: 'LISTENING' , url: 'usic.youtube.com/channel/UCbAQ5ZzJ46URxIWeuys8CPw' })
+	bot.user.setActivity('f!help', { type: 'LISTENING'})
 })
 
 bot.on('message', function (message) {
@@ -83,6 +83,24 @@ bot.on('message', function (message) {
 			message.channel.send("thx !")
 			message.react('♥️')
 		}
+	
+	bot.on("messageReactionAdd", (reaction, user) => {
+    if (user.bot) return
+    if (reaction.emoji.name == "✅") {
+        reaction.message.channel.send('Tu as réagi : ✅');
+        reaction.message.guild.channels.create(`ticket de ${user.username}`, {
+            type: 'text',
+            parent: "ID_DE_LA_CATEGORY",
+            permissionOverwrites: [{
+                id: reaction.message.guild.id,
+                deny: ['SEND_MESSAGES'],
+                allow: ['ADD_REACTIONS']
+            }]
+        }).then(channel_ticket => {
+            channel_ticket.send("Channel crée !")
+        })
+    }
+})
 
 		if (message.content === "raid !")
 			message.channel.send(" heum , <@693832416925581332> , <@668452729265455111> qlq à prononcer le mot 'raid' !")

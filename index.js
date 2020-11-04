@@ -53,7 +53,7 @@ bot.on('message', function (message) {
 	}
 
 	if (message.content === 'f!publispace') {
-		message.channel.send(' https://discord.gg/PpQeN3Q\n(Commande perso gagné)')
+		message.channel.send(' https://discord.gg/QNaURJPjKH\n(Commande perso gagné)')
 		message.react('🤷')
 		message.author.send('Pourquoi avoir fait cette commande 🤦')
 		}

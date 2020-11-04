@@ -83,18 +83,6 @@ bot.on('message', function (message) {
 			message.channel.send("thx !")
 			message.react('♥️')
 		}
-	
-	if (message.content === "f!clear") {
-        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas les permissions");
-        if (!args[0]) return message.channel.send("Vous devez mettre un nombre de messages à supprimer");
-        if (isNan(args[0])) return message.channel.send("Le nombre de message est invalide");
-        if (parseInt(args[0]) <= 0 || parseInt(args[0]) >= 99) return message.channel.send("Le nombre de messages à supprimer doit être compris entre 1 et 99.")
-        message.channel.bulkDelete(parseInt(args[0]) + 1)
-        message.channel.send(`Vous avez supprimé ${args[1]} message(s)`).then(msg => {
-            setTimeout(() => {
-                msg.delete()
-            }, 5000);
-        });
 
 		if (message.content === "raid !")
 			message.channel.send(" heum , <@693832416925581332> , <@668452729265455111> qlq à prononcer le mot 'raid' !")

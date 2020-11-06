@@ -9,7 +9,7 @@ bot.on('ready', function () {
 bot.on('message', function (message) {
 	if (message.content === 'f!help') {
 		let HelpEmbed = new Discord.MessageEmbed()
-		.setDescription("Voici les commandes : **__f!help\nf!langage\nf!status\nf!arouf\nf!membres\nf!clear\n\nf!publispace\nf!graphiste\nf!venice__**")
+		.setDescription("Voici les commandes : **__f!help\nf!langage\nf!status\nf!arouf\nf!membres\n\nf!publispace\nf!graphiste\nf!venice__**")
 		.setColor("#FFFF00")
 		.setTitle("Help")
 		.setFooter("👍 Footer !")
